@@ -1,0 +1,55 @@
+
+unnamed.png
+size: 512,64
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Jump
+  rotate: false
+  xy: 71, 7
+  size: 66, 41
+  orig: 256, 192
+  offset: 96, 74
+  index: 2
+Jump
+  rotate: false
+  xy: 137, 7
+  size: 66, 41
+  orig: 256, 192
+  offset: 96, 74
+  index: 3
+Jump
+  rotate: false
+  xy: 315, 0
+  size: 43, 48
+  orig: 256, 192
+  offset: 100, 74
+  index: 1
+Ladder
+  rotate: false
+  xy: 0, 8
+  size: 71, 40
+  orig: 256, 192
+  offset: 91, 75
+  index: 3
+Ladder
+  rotate: false
+  xy: 203, 8
+  size: 66, 40
+  orig: 256, 192
+  offset: 96, 75
+  index: 2
+Ladder
+  rotate: false
+  xy: 269, 7
+  size: 46, 41
+  orig: 256, 192
+  offset: 100, 74
+  index: 4
+Ladder
+  rotate: false
+  xy: 358, 4
+  size: 31, 44
+  orig: 256, 192
+  offset: 99, 72
+  index: 1
