@@ -8,7 +8,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class Anim {
     //private Texture img;
     private final TextureAtlas atlas;
-    private Animation<TextureRegion> anm;
+    private final Animation<TextureRegion> anm;
     private float time;
 
     public Anim(String name, int col, int row, Animation.PlayMode playMode){
@@ -26,12 +26,13 @@ public class Anim {
 //                region1[cnt++] = regions0[i][j];
 //            }
 //        }
+
         atlas = new TextureAtlas("atlas/unnamed.atlas");
         anm = new com.badlogic.gdx.graphics.g2d.Animation<TextureRegion>(1/15f, atlas.findRegions("Ladder"));
-        anm = new com.badlogic.gdx.graphics.g2d.Animation<TextureRegion>(1/15f, atlas.findRegions("Jump"));
+        //anm = new com.badlogic.gdx.graphics.g2d.Animation<TextureRegion>(1/15f, atlas.findRegions("Jump"));
         anm.setPlayMode(playMode);
 
-        time += Gdx.graphics.getDeltaTime();
+        time = 0;
     }
 
     public TextureRegion getFrame() {return anm.getKeyFrame(time);}

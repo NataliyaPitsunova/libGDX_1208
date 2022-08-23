@@ -20,7 +20,7 @@ public class MyGdxGame extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		animation = new Anim("Alstreim2.png", 9,6, Animation.PlayMode.LOOP);
+		animation = new Anim("ezgif-3-7ce6b9eafc.png", 5,4, Animation.PlayMode.LOOP);
 	}
 
 	@Override
@@ -45,9 +45,9 @@ public class MyGdxGame extends ApplicationAdapter {
 		if (animation.getFrame().isFlipX() && lookRight) animation.getFrame().flip(true, false);
 
 		if (lookRight) {
-			animPositionX += 1;
+			animPositionX += 5;
 		} else {
-			animPositionX -= 1;
+			animPositionX -= 5;
 		}
 
 		batch.begin();
