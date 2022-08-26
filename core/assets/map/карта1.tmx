@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="right-down" width="59" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="30">
+ <tileset firstgid="1" name="monochrome_tilemap_transparent" tilewidth="16" tileheight="16" spacing="1" tilecount="400" columns="20">
+  <image source="monochrome_tilemap_transparent.png" width="339" height="339"/>
+  <tile id="131">
+   <animation>
+    <frame tileid="369" duration="100"/>
+    <frame tileid="370" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="136">
+   <animation>
+    <frame tileid="163" duration="250"/>
+    <frame tileid="164" duration="250"/>
+    <frame tileid="165" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="287">
+   <animation>
+    <frame tileid="287" duration="100"/>
+    <frame tileid="327" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="288">
+   <animation>
+    <frame tileid="288" duration="100"/>
+    <frame tileid="328" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="307">
+   <animation>
+    <frame tileid="307" duration="100"/>
+    <frame tileid="347" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="308">
+   <animation>
+    <frame tileid="308" duration="100"/>
+    <frame tileid="348" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="фон" width="59" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgsGUceEwM0KTAfE0i7SAEbKljDE6gAXWnFgXu1aCSXwOpYwxOgO5XBSCtSKLbh5JfQWkQ5lcTIG06TP1qA81zdiMgDVMDjPqVdFBJHWNoCqjlV1qCn1QyZzD5VReI9YBYn0bmDya/4gPUCIeh4ldqgKHqV1geFgG6XxSIxRgx5dDBUPUrDJDSTsbm191UcIMqEluIAnN2ofFF0OIQve2ID8D8GjZEsAbUX8h8GICl5acMmPgZw9BLwzZobWJYOxmGcbWXfzEMPb+SC0b9OvDgCQP2PEcJ5mMcnH7lopG5ML+KMg5/DAIABGBL5w==
+  </data>
+ </layer>
+ <objectgroup id="3" name="объекты">
+  <object id="16" x="15.125" y="240.125" width="817.125" height="50.875">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="17" x="829.125" y="241" width="97.875" height="28.625">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="18" x="751.75" y="192.114" width="48.5" height="53.75">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="19" x="687.636" y="224.182" width="32.3636" height="22.1818">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="22" x="752.068" y="144.159" width="127.989" height="1.8693">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="29" x="3.10417" y="-13.4375" width="13.125" height="317.542">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="сеттинг">
+  <object id="21" name="hero" x="467.333" y="184" width="24" height="22">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="gravityScale" type="float" value="20"/>
+    <property name="restitution" type="float" value="0.75"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="2" name="Слой 2" width="59" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh84C0apha4RUWzKAE3oLQWI+3sgPm1hXZWEAU0gH7UZET4lRbuwRavfoyE2d5Atg8Q+1IpHmyA5tgCsR0d4nUwAFYamz9U/EqNcBj168AANjxyg8GvW4F4Gxl4O5o5kkAsBcTSOOzBFw7IoA1P2UapX0+Sqe80CWpxhQN6OJ9iwB2WIDAU/Eqs3fcImD+U/XoXjT+c/YoO6O1XATQaGfATcAulgNZ+RU9HKki0GZStBMTmQKyMpO4+hfZ2YuEj+xWb+YOpfqU1GPXr8ASjfh2eYCT5dSQBALBxQXE=
+  </data>
+ </layer>
+ <layer id="4" name="Слой 3" width="59" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFyODHQDsAB1hOAzMHq19pAUb9OjzBqF+HJ8Dn114g7kPD/TjE0dUMRjBY4/UBAUwOGKx+pQUY9evwBKN+HZ5gKPu1jZE09UPZr6SCUb8OTzDq1+EJeIBl2VMG+uBRQB0AAHciOjg=
+  </data>
+ </layer>
+</map>
