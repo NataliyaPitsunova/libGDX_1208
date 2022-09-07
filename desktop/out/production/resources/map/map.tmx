@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="right-down" width="97" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="tiles" tilewidth="90" tileheight="83" spacing="2" tilecount="22" columns="22">
+  <image source="tiles.png" width="2048" height="128"/>
+  <tile id="18">
+   <animation>
+    <frame tileid="12" duration="100"/>
+    <frame tileid="13" duration="100"/>
+    <frame tileid="14" duration="100"/>
+    <frame tileid="15" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="19">
+   <animation>
+    <frame tileid="5" duration="100"/>
+    <frame tileid="6" duration="100"/>
+    <frame tileid="7" duration="100"/>
+    <frame tileid="8" duration="100"/>
+    <frame tileid="9" duration="100"/>
+    <frame tileid="10" duration="100"/>
+    <frame tileid="11" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Слой тайлов 1" width="97" height="20" offsetx="-169.333" offsety="78.6667">
+  <data encoding="base64" compression="zlib">
+   eJzt1TEKwCAQBEAL8wBN/v/WtEEQQhSVOFNdcXtsdyEAAAA11+wChdX6APxNnF2AYVb+qb27pRc7sTJ/cTbmj8b8U+54CwBgVzeOcQCY
+  </data>
+ </layer>
+</map>

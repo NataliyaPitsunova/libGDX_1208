@@ -20,7 +20,6 @@ public class MyGdxGame extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		animation = new Anim("ezgif-3-7ce6b9eafc.png", 5,4, Animation.PlayMode.LOOP);
 	}
 
 	@Override

@@ -3,6 +3,8 @@ package com.mygdx.game.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -18,6 +20,8 @@ public class MenuScreen implements Screen {
     private final Texture img;
     private final Rectangle startRect;
     private final ShapeRenderer shapeRenderer;
+    private final Music music;
+    private final Sound sound;
 
     public MenuScreen(Main game) {
         this.game = game;
@@ -26,6 +30,12 @@ public class MenuScreen implements Screen {
         startRect = new Rectangle(0, 0, img.getWidth(), img.getHeight());
         shapeRenderer = new ShapeRenderer();
 
+        music = Gdx.audio.newMusic(Gdx.files.internal("Soundtracks — Чип и Дейл (Disney, 1989) (www.lightaudio.ru).mp3"));
+        music.setLooping(true);
+        music.setVolume(0.05f);
+        music.play();
+
+        sound = Gdx.audio.newSound(Gdx.files.internal("77fae3ab5b341cd.mp3"));
     }
 
     @Override
@@ -36,6 +46,8 @@ public class MenuScreen implements Screen {
     @Override
     public void render(float delta) {
         ScreenUtils.clear(Color.BROWN);
+
+
 
         batch.begin();
         batch.draw(img, 0, 0);
@@ -52,7 +64,9 @@ public class MenuScreen implements Screen {
             Vector2 vect = new Vector2(x, y);
             if (startRect.contains(x, y)) {
                 dispose();
-                game.setScreen(new GameScreen(game));
+                game.setScreen(new GameScreen(game, "map/карта1.tmx"));
+            } else {
+                sound.play(1, 1, 0);
             }
         }
 
@@ -83,5 +97,6 @@ public class MenuScreen implements Screen {
         this.batch.dispose();
         this.img.dispose();
         this.shapeRenderer.dispose();
+        this.music.dispose();
     }
 }

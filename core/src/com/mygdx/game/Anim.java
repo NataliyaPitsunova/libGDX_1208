@@ -11,7 +11,7 @@ public class Anim {
     private final Animation<TextureRegion> anm;
     private float time;
 
-    public Anim(String name, int col, int row, Animation.PlayMode playMode){
+    public Anim(String name, String pattern, Animation.PlayMode playMode){
 
 //        img = new Texture(name);
 //        TextureRegion region0 = new TextureRegion(img);
@@ -27,8 +27,8 @@ public class Anim {
 //            }
 //        }
 
-        atlas = new TextureAtlas("atlas/unnamed.atlas");
-        anm = new com.badlogic.gdx.graphics.g2d.Animation<TextureRegion>(1/15f, atlas.findRegions("Ladder"));
+        atlas = new TextureAtlas(name);
+        anm = new Animation<TextureRegion>(1/15f, atlas.findRegions(pattern));
         //anm = new com.badlogic.gdx.graphics.g2d.Animation<TextureRegion>(1/15f, atlas.findRegions("Jump"));
         anm.setPlayMode(playMode);
 

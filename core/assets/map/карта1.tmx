@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="right-down" width="59" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="30">
+<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="right-down" width="59" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="70">
  <tileset firstgid="1" name="monochrome_tilemap_transparent" tilewidth="16" tileheight="16" spacing="1" tilecount="400" columns="20">
   <image source="monochrome_tilemap_transparent.png" width="339" height="339"/>
   <tile id="131">
@@ -46,16 +46,18 @@
   </data>
  </layer>
  <objectgroup id="3" name="объекты">
-  <object id="16" x="15.125" y="240.125" width="817.125" height="50.875">
+  <object id="16" x="-8.875" y="240.125" width="841.125" height="50.875">
    <properties>
     <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
     <property name="gravityScale" type="float" value="1"/>
     <property name="restitution" type="float" value="0"/>
    </properties>
   </object>
-  <object id="17" x="829.125" y="241" width="97.875" height="28.625">
+  <object id="17" x="828.938" y="241.031" width="103.875" height="28.625">
    <properties>
     <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
     <property name="gravityScale" type="float" value="1"/>
     <property name="restitution" type="float" value="0"/>
    </properties>
@@ -63,6 +65,7 @@
   <object id="18" x="751.75" y="192.114" width="48.5" height="53.75">
    <properties>
     <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
     <property name="gravityScale" type="float" value="1"/>
     <property name="restitution" type="float" value="0"/>
    </properties>
@@ -70,6 +73,7 @@
   <object id="19" x="687.636" y="224.182" width="32.3636" height="22.1818">
    <properties>
     <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
     <property name="gravityScale" type="float" value="1"/>
     <property name="restitution" type="float" value="0"/>
    </properties>
@@ -77,6 +81,7 @@
   <object id="22" x="752.068" y="144.159" width="127.989" height="1.8693">
    <properties>
     <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
     <property name="gravityScale" type="float" value="1"/>
     <property name="restitution" type="float" value="0"/>
    </properties>
@@ -84,17 +89,331 @@
   <object id="29" x="3.10417" y="-13.4375" width="13.125" height="317.542">
    <properties>
     <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
     <property name="gravityScale" type="float" value="1"/>
-    <property name="restitution" type="float" value="5"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="30" name="roll" x="402" y="173.25" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="31" name="roll" x="409.5" y="159.25" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="32" name="roll" x="435.75" y="154.75" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="33" name="roll" x="403.5" y="210.75" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="34" name="roll" x="425.25" y="185.75" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="35" name="roll" x="356" y="190" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="36" name="roll" x="372.25" y="158" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="37" name="roll" x="388.25" y="189" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="38" name="roll" x="447" y="187.25" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="39" name="roll" x="423.25" y="219" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="40" x="656.97" y="160.485" width="46.3636" height="4.84847">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="41" x="545" y="144.848" width="46.3636" height="4.84847">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="43" x="255.485" y="127.909" width="239.364" height="4.84847">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="44" x="224.818" y="49.2424" width="46.3636" height="4.84847">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="45" x="81.1515" y="49.5758" width="14.0303" height="4.84847">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="46" x="128.152" y="49.5758" width="14.3636" height="4.84847">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="47" x="176.152" y="48.9091" width="15.0303" height="4.84847">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="48" name="roll" x="378.917" y="63.9583" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="49" name="roll" x="386.417" y="49.9583" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="50" name="roll" x="412.667" y="45.4583" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="51" name="roll" x="380.417" y="101.458" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="52" name="roll" x="402.167" y="76.4583" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="53" name="roll" x="332.917" y="80.7083" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="54" name="roll" x="349.167" y="48.7083" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="55" name="roll" x="365.167" y="79.7083" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="56" name="roll" x="423.917" y="77.9583" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="57" name="roll" x="400.167" y="109.708" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="58" name="roll" x="810.25" y="74.2917" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="59" name="roll" x="817.75" y="60.2917" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="60" name="roll" x="844" y="55.7917" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="61" name="roll" x="811.75" y="111.792" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="62" name="roll" x="833.5" y="86.7917" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="63" name="roll" x="764.25" y="91.0417" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="64" name="roll" x="780.5" y="59.0417" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="65" name="roll" x="796.5" y="90.0417" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="66" name="roll" x="855.25" y="88.2917" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="67" name="roll" x="831.5" y="120.042" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0.25"/>
+   </properties>
+  </object>
+  <object id="69" x="927.438" y="1.229" width="13.125" height="317.542">
+   <properties>
+    <property name="BodyType" value="StaticBody"/>
+    <property name="friction" type="float" value="1"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="6" name="сеттинг">
-  <object id="21" name="hero" x="467.333" y="184" width="24" height="22">
+  <object id="21" name="hero" x="486.333" y="211.333" width="24" height="22">
    <properties>
     <property name="BodyType" value="DynamicBody"/>
-    <property name="gravityScale" type="float" value="20"/>
+    <property name="friction" type="float" value="1"/>
+    <property name="gravityScale" type="float" value="1"/>
     <property name="restitution" type="float" value="0.75"/>
+   </properties>
+  </object>
+  <object id="68" name="bullet" x="77.75" y="396.25" width="6.5" height="5.5">
+   <properties>
+    <property name="BodyType" value="DynamicBody"/>
+    <property name="friction" type="float" value="0"/>
+    <property name="gravityScale" type="float" value="1"/>
+    <property name="restitution" type="float" value="0"/>
    </properties>
   </object>
  </objectgroup>

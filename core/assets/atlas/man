@@ -1,0 +1,62 @@
+
+man.png
+size: 151,114
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+run
+  rotate: false
+  xy: 0, 57
+  size: 45, 57
+  orig: 64, 64
+  offset: 10, 0
+  index: 6
+run
+  rotate: false
+  xy: 0, 0
+  size: 42, 57
+  orig: 64, 64
+  offset: 12, 0
+  index: 2
+run
+  rotate: false
+  xy: 45, 58
+  size: 38, 56
+  orig: 64, 64
+  offset: 14, 0
+  index: 5
+run
+  rotate: false
+  xy: 83, 57
+  size: 37, 57
+  orig: 64, 64
+  offset: 14, 0
+  index: 1
+run
+  rotate: false
+  xy: 120, 58
+  size: 31, 56
+  orig: 64, 64
+  offset: 17, 0
+  index: 3
+run
+  rotate: false
+  xy: 42, 2
+  size: 26, 55
+  orig: 64, 64
+  offset: 20, 0
+  index: 4
+run
+  rotate: false
+  xy: 68, 2
+  size: 37, 55
+  orig: 64, 64
+  offset: 14, 0
+  index: 7
+run
+  rotate: false
+  xy: 105, 3
+  size: 26, 54
+  orig: 64, 64
+  offset: 20, 0
+  index: 8
